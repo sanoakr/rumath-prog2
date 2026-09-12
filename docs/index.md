@@ -50,6 +50,7 @@
 ### ツール・サービス
 
 - [aiJudge（オンラインジャッジ）](https://judge.math.ryukoku.ac.jp/) — 演習課題の提出・自動採点
+    （[使い方ガイド](https://sanoakr.github.io/aijudge/student/)）
 - [PC 画面のスクリーンショットを撮る](setup/screenshot.md)
 - [PC のデスクトップ録画](setup/screen-recording.md)
 - [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
