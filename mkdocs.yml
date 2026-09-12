@@ -57,6 +57,7 @@ markdown_extensions:
 plugins:
   - search:
       lang: ja
+  - include-markdown
 
 # 各回のページは講義に合わせて順次追加する（未公開回はここに載せない）
 nav:
