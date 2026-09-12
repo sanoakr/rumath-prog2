@@ -1,0 +1,80 @@
+site_name: プログラミング及び実習2 2026
+site_url: https://sanoakr.github.io/rumath-prog2/
+repo_url: https://github.com/sanoakr/rumath-prog2
+repo_name: sanoakr/rumath-prog2
+edit_uri: ""
+copyright: 龍谷大学 先端理工学部 数理・情報科学課程
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切替
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切替
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ja
+
+# 各回のページは講義に合わせて順次追加する（未公開回はここに載せない）
+nav:
+  - ホーム: index.md
+  - この科目での質問方法: how-to-ask.md
+  - 講義内容と演習課題:
+      - 第01回 ex01 (09/24): ex01.md
+  - 環境構築:
+      - Windows への WSL の導入と日本語化: setup/wsl-install.md
+      - Ubuntu Linux の C 言語開発環境: setup/ubuntu-c.md
+      - macOS の C 言語開発環境: setup/macos-c.md
+      - WSL のための Visual Studio Code 設定: setup/vscode-wsl.md
+      - WSL と Windows とのファイル共有: setup/wsl-file-sharing.md
+      - Visual Studio Code と（日本語）文字コード: setup/vscode-encoding.md
+      - 簡単な C プログラムをコンパイル・実行してみる: setup/c-hello.md
+  - ツール・サービス:
+      - PC 画面のスクリーンショットを撮る: setup/screenshot.md
+      - PC のデスクトップ録画: setup/screen-recording.md
+      - Vimeo Record でのクラウドデスクトップ録画: setup/vimeo-record.md
+      - paiza ラーニングでクーポンコードを使う: setup/paiza-coupon.md
+      - GitHub Copilot の有効化・無効化: setup/github-copilot.md
