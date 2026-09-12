@@ -14,11 +14,11 @@ WSL 拡張機能を利用すると、Windows 上にインストールされた V
 
 ![画像](../assets/setup/vscode-wsl/img01.png)
 
-WSL 拡張機能のインストールが成功すると VSCode の画面左下に緑色の >< （矢印？）ボックスが表示されるので、これをクリックします。 画面上部に現れるコマンド窓で「新しい WSL ウィンドウ」を選択します。
+WSL 拡張機能のインストールが成功すると VSCode の画面左下に緑色の「><」ボックス（リモート接続ボタン）が表示されるので、これをクリックします。 画面上部に現れるコマンド窓で「新しい WSL ウィンドウ」を選択します。
 
 ![画像](../assets/setup/vscode-wsl/img02.png)
 
-WSL への接続が成功すると、VSCode の新しいウィンドウが開きます。左下の緑色のボックスが接続先の **WSL: Ubuntu **などの表示に変わっていると思います。このウインドウ内の表示は、すべて接続先の WSL の内のものとなります。
+WSL への接続が成功すると、VSCode の新しいウィンドウが開きます。左下の緑色のボックスが接続先の **WSL: Ubuntu** などの表示に変わっていると思います。このウインドウ内の表示は、すべて接続先の WSL の内のものとなります。
 
 ![画像](../assets/setup/vscode-wsl/img03.png)
 
@@ -26,4 +26,4 @@ WSL への接続が成功すると、VSCode の新しいウィンドウが開き
 
 #### 参考
 
-- [WSL で VS Code の使用を開始する](https://docs.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-vscode)
+- [WSL で VS Code の使用を開始する](https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/wsl-vscode)

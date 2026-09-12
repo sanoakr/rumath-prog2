@@ -1,6 +1,6 @@
-# Ubuntu Linux 
+# Ubuntu Linux の C 言語開発環境
 
-### ****build-essential パッケージをインストール****
+### build-essential パッケージをインストール
 
 *apt install* コマンドで、build-essential パッケージをインストールします。
 
@@ -20,4 +20,6 @@ cc
 
 ![画像](../assets/setup/ubuntu-c/img02.png)
 
-### ****（おまけ）簡単なC言語のプログラミングソースをコンパイル・実行してみる****
+### （おまけ）簡単な C 言語のプログラムをコンパイル・実行してみる
+
+環境ができたら [簡単な C プログラムをコンパイル・実行してみる](c-hello.md) を試してください。

@@ -6,6 +6,10 @@ GitHub Copilot は VS Code 上で利用できるコーディングAIです。プ
 
 ここでは、GitHub Copilot を利用するための情報をまとめています。
 
+!!! note
+    VS Code の Copilot は更新が頻繁で、以下のスクリーンショットと画面の見た目が異なることがあります。
+    拡張機能名や設定項目の名前を手がかりに読み替えてください。
+
 ## **GitHub Copilot for Education への登録**
 
 学生は GitHub Copilot の Pro版 を無料で利用できます。

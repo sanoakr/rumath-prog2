@@ -12,7 +12,7 @@ Visual Studio Code では、扱っているファイルの文字コードを自�
 
 ![画像](../assets/setup/vscode-encoding/img01.png)
 
-WSLやmacOS上のCコンパイラ、Python3、Sharif-Judge などではソースファイルの文字コードとして UTF-8 を採用しています。 この科目で日本語を含むソースコードを書いたり、Sharif-Judge で提出する場合は、**必ず UTF-8 を用いてファイルを作成して下さい**。
+WSL や macOS 上の C コンパイラ、Python3、aiJudge（オンラインジャッジ）などではソースファイルの文字コードとして UTF-8 を採用しています。この科目で日本語を含むソースコードを書いたり、aiJudge に提出する場合は、**必ず UTF-8 を用いてファイルを作成して下さい**。
 
 #### ****文字コードと文字化け****
 

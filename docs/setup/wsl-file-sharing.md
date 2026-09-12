@@ -20,4 +20,4 @@ WSL 上のUbuntu Liux からは、**/mnt** 配下に Windows の各ディスク
 
 その他、Windows から Linux 上の実行ファイルを直接呼び出して動作させる方法などがあります。詳しくは以下の公式ドキュメントを読んでください。
 
-- [Windows および Linux ファイル システム間での作業](https://docs.microsoft.com/ja-jp/windows/wsl/filesystems)
+- [Windows および Linux ファイル システム間での作業](https://learn.microsoft.com/ja-jp/windows/wsl/filesystems)
