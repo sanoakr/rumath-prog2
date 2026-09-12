@@ -5,6 +5,9 @@ repo_name: sanoakr/rumath-prog2
 edit_uri: ""
 copyright: 龍谷大学 先端理工学部 数理・情報科学課程
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   language: ja
@@ -78,3 +81,4 @@ nav:
       - PC のデスクトップ録画: setup/screen-recording.md
       - paiza ラーニングでクーポンコードを使う: setup/paiza-coupon.md
       - GitHub Copilot の有効化・無効化: setup/github-copilot.md
+      - WebTerm Learn でターミナル操作を練習する: setup/webterm.md

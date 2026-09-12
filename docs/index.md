@@ -54,3 +54,4 @@
 - [PC のデスクトップ録画](setup/screen-recording.md)
 - [paiza ラーニングでクーポンコードを使う](setup/paiza-coupon.md)
 - [GitHub Copilot の有効化・無効化](setup/github-copilot.md)
+- [WebTerm Learn でターミナル操作を練習する](setup/webterm.md)
