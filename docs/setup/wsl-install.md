@@ -4,13 +4,11 @@ Windows Subsystem for Linux（WSL） は、Windows上で Linux を動作させ�
 
 !!! note
 
-    WSL には古いバージョンの WSL1 と、ここで紹介する WSL2 があります。WSL1 と WSL2 は、一つのWindows 上で共存することが可能です。2023年現在の時点では、新しいWSL2が安定して動くようになっています。この科目ではWSL2の利用を前提とします。WSL = WSL2 と読んで下さい。
+    WSL には古いバージョンの WSL1 と、ここで紹介する WSL2 があります。現在は WSL2 が標準で、WSL1 を使う理由はありません。この科目では WSL2 の利用を前提とします。WSL = WSL2 と読んでください。
 
-WSL のインストール方法は、Microsoft の公式ドキュメント「[**WSL を使用して Windows に Linux をインストールする**](https://docs.microsoft.com/ja-jp/windows/wsl/install)」に詳しく記載されています。先端理工学部の学生は、自分で学修や研究に必要なPC環境を構築・整備できるようになることが期待されています。上記のような公式ドキュメントや、ネット上で検索できる情報をもとに WSL 環境を自力で構築してみることをお勧めします。最近であれば ChatGPT などに尋ねながら自力構築しても良いですね。
+WSL のインストール方法は、Microsoft の公式ドキュメント「[**WSL を使用して Windows に Linux をインストールする**](https://learn.microsoft.com/ja-jp/windows/wsl/install)」に詳しく記載されています。先端理工学部の学生は、自分で学修や研究に必要なPC環境を構築・整備できるようになることが期待されています。上記のような公式ドキュメントや、ネット上で検索できる情報をもとに WSL 環境を自力で構築してみることをお勧めします。最近であれば ChatGPT などに尋ねながら自力構築しても良いですね。
 
 とは言うものの、WSL 環境が構築できないと多くの情報系科目での学修が滞ってしまうので、このページではWSL 導入のポイントを整理しておきたいと思います。
-
----
 
 ---
 
@@ -18,13 +16,16 @@ WSL のインストール方法は、Microsoft の公式ドキュメント「[**
 
 WSL はWindows の標準機能として提供されていますが、WSL を利用するためには以下の条件を満たす必要があります。WSL のインストール前に、利用している Windows のバージョンを確認してください。
 
-> Windows 10 バージョン 2004 以降 (ビルド 19041 以降) または Windows 11 を実行している必要があります。
+!!! warning "Windows 11 を前提とします"
+    Windows 10 は 2025 年 10 月 14 日にサポートが終了しました。この科目では **Windows 11** を前提とします。
+    Windows 10 の PC を使っている場合は Windows 11 へアップグレードしてください
+    （PC が対応していない場合は早めに担当教員・TA に相談してください）。
 
-ここ数年以内に購入したPCであれば、間違いなくこの条件を満たしていると思います。もしこの条件を満たしていない場合は、**Windows Update を実行し Windows を最新のバージョンにアップデートしてください。**
+Windows 11 であれば WSL の動作条件は満たしています。**Windows Update を実行して Windows を最新の状態にしてから** 導入を始めてください。
 
 #### Windows バージョンの確認方法
 
-Windows のバージョンを確認して、WSLの導入条件を満たしていることを確認します。
+Windows のバージョンを確認して、Windows 11 であることを確認します。
 
 [お持ちの Windows のバージョンを確認する](https://support.microsoft.com/ja-jp/windows/お持ちの-windows-のバージョンを確認する-12d35019-4da9-0cb1-ba47-f8b031b712ad)
 
@@ -32,7 +33,7 @@ Windows のバージョンを確認して、WSLの導入条件を満たしてい
 
 ### **WSL と Ubuntu Linux の導入**
 
-Windows に WSL（Windows Subsystem for Linux、以下 WSL）を導入します。同じ内容が「[**WSL を使用して Windows に Linux をインストールする**](https://docs.microsoft.com/ja-jp/windows/wsl/install)」にあります。
+Windows に WSL（Windows Subsystem for Linux、以下 WSL）を導入します。同じ内容が「[**WSL を使用して Windows に Linux をインストールする**](https://learn.microsoft.com/ja-jp/windows/wsl/install)」にあります。
 
 1. Windows の検索から「powershell」と入力して「管理者として実行」より、Windows PowerShell を管理者権限で起動してください。
 2. 管理者権限で起動した PowerShell で以下を入力します。
@@ -41,6 +42,7 @@ Windows に WSL（Windows Subsystem for Linux、以下 WSL）を導入します�
     ```
 
 3. WSL のインストールが始まります（少し時間が掛かります）。**インストールが完了したらPCを再起動してください。**
+    - Linux ディストリビューションは既定で Ubuntu の最新 LTS（現在は 24.04）が入ります。他のバージョンを入れたい場合は `wsl --list --online` で一覧を見て `wsl --install -d <名前>` とします。
     - すでに WSL がインストール済みの場合は、wsl コマンドの使用方法が表示されます。
 
     ![画像](../assets/setup/wsl-install/img02.png)
@@ -85,7 +87,7 @@ wsl --install -d Ubuntu
 ### Ubuntu ソフトウェアパッケージの更新
 
 1. Ubuntu に導入済みのアプリケーションパッケージの情報を最新のものにアップデートします。Ubuntu に以下のコマンドを入力します。
-    ```powershell
+    ```sh
     sudo apt update
     ```
 
@@ -94,7 +96,7 @@ wsl --install -d Ubuntu
     ![画像](../assets/setup/wsl-install/img07.png)
 
 2. 以下を入力すると、更新した情報に基づいて Ubuntu Linux のパッケージを最新版にアップグレードします。途中、y/n での確認のキー入力が必要です。
-    ```powershell
+    ```sh
     sudo apt upgrade
     ```
 
@@ -103,14 +105,14 @@ wsl --install -d Ubuntu
 #### 日本語パッケージのインストール
 
 1. 日本語言語パッケージをインストールします（apt コマンドに -y を付けると y/n の途中確認が省略できます）。
-    ```powershell
+    ```sh
     sudo apt -y install language-pack-ja
     ```
 
     ![画像](../assets/setup/wsl-install/img08.png)
 
 2. 言語設定を日本語に変更します。設定後、Ubuntu のターミナル（コマンド入力している窓です。コマンドベースのインターフェイスをこう呼びます。）を一旦閉じて Ubuntu Linux を立ち上げ直します。
-    ```powershell
+    ```sh
     sudo update-locale LANG=ja_JP.utf8
     ```
 
@@ -121,13 +123,13 @@ wsl --install -d Ubuntu
 
 ### 日本語マニュアルのインストール
 
-```powershell
+```sh
 sudo apt -y install manpages-ja manpages-ja-dev
 ```
 
 マニュアルを表示する man コマンド
 
-```powershell
+```sh
 man ls
 ```
 

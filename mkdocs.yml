@@ -75,6 +75,5 @@ nav:
   - ツール・サービス:
       - PC 画面のスクリーンショットを撮る: setup/screenshot.md
       - PC のデスクトップ録画: setup/screen-recording.md
-      - Vimeo Record でのクラウドデスクトップ録画: setup/vimeo-record.md
       - paiza ラーニングでクーポンコードを使う: setup/paiza-coupon.md
       - GitHub Copilot の有効化・無効化: setup/github-copilot.md
