@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "docs/**"
+      - "lecture-courses"
       - "mkdocs.yml"
       - "pyproject.toml"
       - "uv.lock"
