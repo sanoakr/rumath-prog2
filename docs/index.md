@@ -5,12 +5,12 @@
 [:fontawesome-brands-microsoft: Teams 科目チームを開く](https://teams.microsoft.com/l/team/19%3AJgKcvpwTAspf08eCgp-kWfWqqOLFiWKFZU68r7_L_co1%40thread.tacv2/conversations?groupId=9c9eabd5-f677-4a95-8372-3e46f2e0a0c9&tenantId=23b65fdf-a4e3-4a19-b03d-12b1d57ad76e){ .md-button .md-button--primary }
 [:material-gavel: aiJudge（オンラインジャッジ）を開く](https://judge.math.ryukoku.ac.jp/){ .md-button }
 
-前期「プログラミング及び実習1」に続き、各 OS 標準の C 言語開発環境（WSL / macOS）を自分の PC 上に構築し、
-関数・配列・スコープ・再帰といった C 言語の基本を演習を通じて身につけます。
+この科目では、前期の「プログラミング及び実習1」に続いて、各 OS 標準の C 言語開発環境（WSL / macOS）を自分の PC 上に構築し、
+関数・配列・スコープ・再帰などの C 言語の基本を演習で身につけます。
 
 !!! info "この科目での質問方法"
-    詳しくは [この科目での質問方法](how-to-ask.md) を読んでください。
     質問は Teams の科目チームの **「★ 質問用チャネル」** に投稿してください。
+    詳しくは [この科目での質問方法](how-to-ask.md) を読んでください。
 
 ## 講義内容と演習課題
 
