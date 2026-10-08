@@ -69,6 +69,7 @@ nav:
   - 講義内容と演習課題:
       - 第01回 ex01 (09/24): ex01.md
       - 第02回 ex02 (10/01): ex02.md
+      - 第03回 ex03 (10/08): ex03.md
   - 環境構築:
       - Windows への WSL の導入と日本語化: setup/wsl-install.md
       - Ubuntu Linux の C 言語開発環境: setup/ubuntu-c.md
