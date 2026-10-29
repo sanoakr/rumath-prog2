@@ -72,6 +72,7 @@ nav:
       - 第03回 ex03 (10/08): ex03.md
       - 第04回 ex04 (10/15): ex04.md
       - 第05回 ex05 (10/22): ex05.md
+      - 第06回 ex06 (10/29): ex06.md
   - 環境構築:
       - Windows への WSL の導入と日本語化: setup/wsl-install.md
       - Ubuntu Linux の C 言語開発環境: setup/ubuntu-c.md
